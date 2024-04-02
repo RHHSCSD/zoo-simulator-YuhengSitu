@@ -26,14 +26,14 @@ public class Animal implements IEntity {
     private String sound = "AAAAAAAA(default sound)";
     
     /**
-     *
+     * Constructor of Animal Class
      * @param name
      * @param species
-     * @param sex
+     * @param sex  Male/Female
      * @param age
      * @param positionX
      * @param positionY
-     * @param size
+     * @param size  Small/Median/Large
      * @param speed
      * @param direction
      * @param hunger
@@ -60,7 +60,7 @@ public class Animal implements IEntity {
     }
     
     /**
-     *
+     * Allow animals to make thier sound
      */
     @Override
     public void makeSound() {
@@ -68,9 +68,9 @@ public class Animal implements IEntity {
     }
     
     /**
-     *
-     * @param x
-     * @param y
+     * Place animals to a given position
+     * @param x    position at X
+     * @param y    position at Y
      */
     @Override
     public void place(int x, int y) {
@@ -80,7 +80,7 @@ public class Animal implements IEntity {
     }
     
     /**
-     *
+     * Allow animals to move (based on their position, speed and direction)
      */
     @Override
     public void move() {
@@ -126,7 +126,7 @@ public class Animal implements IEntity {
     }
     
     /**
-     *
+     * Allow animals to trun direction
      * @param degrees
      */
     @Override
