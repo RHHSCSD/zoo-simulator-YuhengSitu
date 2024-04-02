@@ -5,14 +5,14 @@
 package zoosim;
 
 /**
- *
+ * WaterAnim Class
  * @author yuhen
  */
 public class WaterAnim extends Animal implements ISwimmable {
     private boolean canBreathe;
 
     /**
-     *
+     * Constructor of WaterAnim Class
      * @param name
      * @param species
      * @param sex
@@ -26,7 +26,7 @@ public class WaterAnim extends Animal implements ISwimmable {
      * @param fatigue
      * @param image
      * @param sound
-     * @param canBreathe
+     * @param canBreathe   can the animal breathe underwater or not
      */
     public WaterAnim(String name, String species, AnimalSex sex, int age, int positionX, int positionY,
                      AnimalSize size, int speed, int direction, int hunger, int fatigue,
@@ -36,16 +36,16 @@ public class WaterAnim extends Animal implements ISwimmable {
     }
 
     /**
-     *
-     * @return
+     * Checks if the animal can breathe underwater
+     * @return   true if the animal can breathe underwater
      */
     public boolean isCanBreathe() {
         return canBreathe;
     }
-
+    
     /**
-     *
-     * @return
+     * Determines if the aquatic animal has the ability to surface.
+     * @return   true for now, assume that they can all surface
      */
     @Override
     public boolean canSurface() {
@@ -53,8 +53,8 @@ public class WaterAnim extends Animal implements ISwimmable {
     }
 
     /**
-     *
-     * @return
+     * Returns a string representation(all basic information) of the aquatic animal
+     * @return    Breathe capability + superclass information(Basic Information)
      */
     @Override
     public String toString() {

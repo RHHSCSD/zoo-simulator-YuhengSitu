@@ -5,13 +5,14 @@
 package zoosim;
 
 /**
- *
+ * LandAnim Class
  * @author yuhen
  */
 public class LandAnim extends Animal {
 
     /**
-     *
+     * Constructor of LandAnim Class
+     * Basic information same as superclass
      * @param name
      * @param species
      * @param sex
@@ -33,8 +34,8 @@ public class LandAnim extends Animal {
     }
 
     /**
-     *
-     * @return
+     * Returns a string representation(all basic information) of the LandAnimal.
+     * @return    superclass information(Basic Information)
      */
     @Override
     public String toString() {

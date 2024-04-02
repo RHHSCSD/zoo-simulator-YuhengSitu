@@ -27,19 +27,19 @@ public class Animal implements IEntity {
     
     /**
      * Constructor of Animal Class
-     * @param name
-     * @param species
-     * @param sex  Male/Female
-     * @param age
-     * @param positionX
-     * @param positionY
-     * @param size  Small/Median/Large
-     * @param speed
-     * @param direction
-     * @param hunger
-     * @param fatigue
-     * @param image
-     * @param sound
+     * @param name  Name of the animal
+     * @param species  species of the animal
+     * @param sex  sex of the animal(Male/Female)
+     * @param age  age of the animal
+     * @param positionX  positionX of the animal
+     * @param positionY  positionY of the animal
+     * @param size  size of the animal(Small/Median/Large)
+     * @param speed  speed of the animal
+     * @param direction  direction of the animal
+     * @param hunger  hunger of the animal
+     * @param fatigue  fatigue of the animal
+     * @param image  image of the animal
+     * @param sound  sound of the animal
      */
     public Animal(String name, String species, AnimalSex sex, int age, int positionX, int positionY,
                   AnimalSize size, int speed, int direction, int hunger, int fatigue, Image image, String sound) {
@@ -80,7 +80,7 @@ public class Animal implements IEntity {
     }
     
     /**
-     * Allow animals to move (based on their position, speed and direction)
+     * Moves the animal to a new position(based on their position, speed and direction)
      */
     @Override
     public void move() {
@@ -108,7 +108,7 @@ public class Animal implements IEntity {
     }
     
     /**
-     *
+     * feed all hungry animals
      */
     @Override
     public void eat() {
@@ -117,7 +117,7 @@ public class Animal implements IEntity {
     }
     
     /**
-     *
+     * make all tired animals sleep
      */
     @Override
     public void sleep() {
@@ -127,7 +127,7 @@ public class Animal implements IEntity {
     
     /**
      * Allow animals to trun direction
-     * @param degrees
+     * @param degrees   turning  degrees
      */
     @Override
     public void turn(double degrees) {
@@ -136,8 +136,8 @@ public class Animal implements IEntity {
     }
     
     /**
-     *
-     * @return
+     * Override the toString method, return a string representation(all information) of the animal.
+     * @return   all basic information of the animal
      */
     @Override
     public String toString() {
@@ -162,32 +162,32 @@ public class Animal implements IEntity {
     // Some Getters and Setters
 
     /**
-     *
-     * @return
+     * get ID of the animal
+     * @return   ID of the animal
      */
     public int getId() {
         return id;
     }
 
     /**
-     *
-     * @return
+     * get Name of the animal
+     * @return   Name of the animal
      */
     public String getName() {
         return name;
     }
     
     /**
-     *
-     * @return
+     * get Hunger of the animal
+     * @return   Hunger of the animal
      */
     public int getHunger() {
         return hunger;
     }
 
     /**
-     *
-     * @return
+     * get Fatigue of the animal
+     * @return   Fatigue of the animal
      */
     public int getFatigue() {
         return fatigue;

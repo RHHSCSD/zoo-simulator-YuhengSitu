@@ -3,15 +3,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package zoosim;
-/**
- * @author Yuheng Situ
- */
+/* How would you modify this structure to allow for predator/prey interactions and Carnivores/Omnivores/Herbivores?
+1, Define animal species
+2, create a feeding interface that defines the diet required for each species of animal
+3, create a method for recognizing the relationship between predator and prey, allowing the predator to recognize the prey
+*/
+
+
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
 /**
- *
+ * ZooSim Class
  * @author yuhen
  */
 public class ZooSim {

@@ -5,24 +5,24 @@
 package zoosim;
 
 /**
- *
+ * IFlyable interface
  * @author yuhen
  */
 public interface IFlyable {
 
     /**
-     *
+     * Makes the BirdAnimal fly
      */
     public void fly();
     
     /**
-     *
+     * Makes the BirdAnimal land.
      */
     public void land();
     
     /**
-     *
-     * @return
+     * Checks if the BirdAnimal is currently flying.
+     * @return   true if the bird is flying
      */
     public boolean isFlying();
 }

@@ -5,7 +5,7 @@
 package zoosim;
 
 /**
- *
+ * BirdAnim Class
  * @author yuhen
  */
 public class BirdAnim extends Animal implements IFlyable{
@@ -13,7 +13,7 @@ public class BirdAnim extends Animal implements IFlyable{
     private boolean isFlyingOrNot;
 
     /**
-     *
+     * Constructor of BirdAnim Class
      * @param name
      * @param species
      * @param sex
@@ -27,7 +27,7 @@ public class BirdAnim extends Animal implements IFlyable{
      * @param fatigue
      * @param image
      * @param sound
-     * @param canFly
+     * @param canFly    defind the animal can fly or not
      */
     public BirdAnim(String name, String species, AnimalSex sex, int age, int positionX, int positionY,
                     AnimalSize size, int speed, int direction, int hunger, int fatigue,
@@ -37,15 +37,15 @@ public class BirdAnim extends Animal implements IFlyable{
     }
 
     /**
-     *
-     * @return
+     * Checks if the animal can fly
+     * @return   true if the bird can fly, false otherwise.
      */
     public boolean isCanFly() {
         return canFly;
     }
     
     /**
-     *
+     * Makes the BirdAnimal fly
      */
     @Override
     public void fly() {
@@ -54,7 +54,7 @@ public class BirdAnim extends Animal implements IFlyable{
     }
     
     /**
-     *
+     * Makes the BirdAnimal land.
      */
     @Override
     public void land() {
@@ -63,17 +63,17 @@ public class BirdAnim extends Animal implements IFlyable{
     }
 
     /**
-     *
-     * @return
-     */
+     * Checks if the BirdAnimal is currently flying.
+     * @return   true if the bird is flying
+     */ 
     @Override
     public boolean isFlying() {
         return isFlyingOrNot;
     }
 
     /**
-     *
-     * @return
+     * Returns a string representation(all basic information) of the BirdAnimal.
+     * @return   flying capability + superclass information(Basic Information)
      */
     @Override
     public String toString() {

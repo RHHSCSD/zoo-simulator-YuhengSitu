@@ -5,29 +5,17 @@
 package zoosim;
 
 /**
- *
+ * AnimalConstant class, setting those constant value here
  * @author yuhen
  */
 public class AnimalConstant {
 
-    /**
-     *
-     */
     public static final int MAX_DEGREE = 360;
 
-    /**
-     *
-     */
     public static final int MIN_DEGREE = 0;
 
-    /**
-     *
-     */
     public static final int FATIGUE_THRESHOLD = 100;
 
-    /**
-     *
-     */
     public static final int HUNGER_THRESHOLD = 100;
 
     private AnimalConstant() {

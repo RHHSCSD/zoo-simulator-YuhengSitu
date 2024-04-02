@@ -5,23 +5,24 @@
 package zoosim;
 
 /**
- *
+ * AnimalSex Class
+ * It's just a framework to make things easier for future development, can be directly replaced by a String for now.
  * @author yuhen
  */
 public class AnimalSex {
     private String sex;
     
     /**
-     *
-     * @param sex
+     * Constructor of AnimalSex Class, Define the sex of the animal
+     * @param sex sex of the animal(Male/Female)
      */
     public AnimalSex(String sex) {
         this.sex = sex;
     }
     
     /**
-     *
-     * @return
+     * get the sex of the animal
+     * @return   the sex of the animal
      */
     public String getSex() {
         return sex;

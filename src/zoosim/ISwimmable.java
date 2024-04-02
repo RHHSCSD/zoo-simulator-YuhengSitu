@@ -5,14 +5,14 @@
 package zoosim;
 
 /**
- *
+ * ISwimmable interface
  * @author yuhen
  */
 public interface ISwimmable {
 
     /**
-     *
-     * @return
+     * Determines if the aquatic animal has the ability to surface.
+     * @return    true if it has the ability to surface
      */
     public boolean canSurface();
 }

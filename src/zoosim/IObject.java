@@ -5,21 +5,21 @@
 package zoosim;
 
 /**
- *
+ * IObject interface
  * @author yuhen
  */
 public interface IObject {
 
     /**
-     *
-     * @param degrees
+     * Allow animals to trun direction
+     * @param degrees    turning  degrees
      */
     public void turn(double degrees);
     
     /**
-     *
-     * @param x
-     * @param y
+     * Place animals to a given position
+     * @param x   position at X
+     * @param y   position at Y
      */
     public void place(int x, int y);
 }

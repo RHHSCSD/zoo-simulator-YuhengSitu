@@ -5,7 +5,7 @@
 package zoosim;
 
 /**
- *
+ * ZooObject Class
  * @author yuhen
  */
 public class ZooObject implements IObject {
@@ -15,11 +15,11 @@ public class ZooObject implements IObject {
     private String size;//Small, Median, Large
 
     /**
-     *
-     * @param zooObjectType
+     * Constructor of ZooObject Class
+     * @param zooObjectType    Type of the object(food, rock, tree)
      * @param positionX
      * @param positionY
-     * @param size
+     * @param size    (Small, Median, Large)
      */
     public ZooObject(String zooObjectType, int positionX, int positionY, String size) {
         this.zooObjectType = zooObjectType;
@@ -29,8 +29,8 @@ public class ZooObject implements IObject {
     }
     
     /**
-     *
-     * @param degrees
+     * Allow objects to trun direction
+     * @param degrees   turning  degrees
      */
     @Override
     public void turn(double degrees) {
@@ -38,9 +38,9 @@ public class ZooObject implements IObject {
     }
     
     /**
-     *
-     * @param x
-     * @param y
+     * Place objects to a given position
+     * @param x    position at X
+     * @param y    position at Y
      */
     @Override
     public void place(int x, int y) {
