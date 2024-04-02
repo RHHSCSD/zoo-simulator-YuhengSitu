@@ -85,23 +85,28 @@ public class Animal implements IEntity {
     @Override
     public void move() {
         boolean cannotMove = false;
+        // Check if the animal is too fatigued to move
         if (fatigue >= AnimalConstant.FATIGUE_THRESHOLD) {
             System.out.println(name + " " + id + " is fatigued.");
             cannotMove = true;
         }
+        // Check if the animal is too hungry to move
         if (hunger >= AnimalConstant.HUNGER_THRESHOLD) {
             System.out.println(name + " " + id + " is hungry.");
             cannotMove = true;
         }
+        // If the animal is either hungry or fatigued, it cannot move
         if (cannotMove) {
             System.out.println(name + " " + id + " is either hungry or fatigued, cannot move.");
             return;
         }
+        // Calculate the movement in the X and Y directions based on the animal's direction and speed by using math cos and sin
         double radians = Math.toRadians(direction);
         int deltaX = (int) (Math.cos(radians) * speed);
         int deltaY = (int) (Math.sin(radians) * speed);
         positionX += deltaX;
         positionY += deltaY;
+        // Increase the fatigue and hunger as the animal moves
         fatigue += speed;
         hunger += speed;
         System.out.println(name + " moved to position (" + positionX + ", " + positionY + ").");
